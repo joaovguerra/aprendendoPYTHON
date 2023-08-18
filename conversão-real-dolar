@@ -1,0 +1,6 @@
+nome = input('Qual seu nome ? ' )
+print('Seja bem vindo {:=^20}' .format(nome))
+dolar = 4.97
+reais =float(input('Digite o valor em reais você quer converter : $'))
+cvs = reais/dolar
+print('{} equivale á {:.2f} dólares' .format(reais,cvs))
