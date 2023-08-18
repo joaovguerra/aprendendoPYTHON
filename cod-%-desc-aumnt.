@@ -1,0 +1,14 @@
+#CÓDIGO DE AUMENTO DE 15%#
+
+salario =int(input('Qual o seu salário ? : $'))
+porc = salario*0.15
+total = salario+porc
+print('De acordo com o aumento de 15% , seu novo salário é : ${}' .format(total))
+
+
+
+#CÓDIGO DE DESCONTO 5%#
+prod = int(input('Preço do produto : $'))
+desc = 0.05*(prod)
+vfin = prod-desc
+print('O novo preço do produto com 5% , de desconto é : ${}' .format(vfin))
