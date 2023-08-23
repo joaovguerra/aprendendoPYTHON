@@ -47,3 +47,10 @@ n2 = int(input('Digite a nota 2 :'))
 s = n1+n2
 m = s/2
 print('A média das notas é {}' .format( m))
+
+
+#PREÇO ALUGUEL DE CARRO#
+km = int(input('Quantos km você percorreu ?'))
+dias =  int(input('Quantos dias você percorreu com o carro ?'))
+total = (60*dias) + (0.15*km)
+print('O preço a pagar é de R$ {}' .format(total))
