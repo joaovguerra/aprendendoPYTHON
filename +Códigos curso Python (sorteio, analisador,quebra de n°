@@ -1,0 +1,32 @@
+#PROGRAMA QUE LEIA O NOME DA CIDADE E DIGA SE ELA COMEÇA COM A PALAVTA 'SANTO'
+cid = str(input('Qual cidade você nasceu ? ')).strip()
+print(cid[:5].upper() == 'SANTO')
+
+
+#SORTEANDO UMA ORDEM NA LISTA#
+import random
+n1 = str(input('Primeiro lugar :'))
+n2 = str(input('Segundo lugar :'))
+n3 = str(input('Terceiro lugar :'))
+n4 = str(input('Quarto lugar :'))
+lista = [n1, n2, n3, n4]
+random.shuffle(lista)
+print('A ordem de apresentação será :')
+print(lista)
+
+#QUEBRANDO UM NÚMERO#
+import math
+num = float(input('Digite um valor :'))
+print('O valor digitado foi {} e a sua porção inteira é {}'.format(num, math.trunc(num)))
+      
+
+#ANALISADOR DE TEXTOS DE UM NOME#
+nome = str(input('Digite seu nome completo :'))
+print('Analisando seu nome ...')
+print('Seu nome em maiúsculas é {}'.format(nome.upper()))
+print('Seu nome em minúsculas é {}'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras'.format(len(nome)-nome.count(' ')))
+print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
+
+
+
