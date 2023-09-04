@@ -1,0 +1,24 @@
+As tautologias são denominadas proposições tautológicas ou proposições logicamente verdadeiras. As contradições são denominadas proposições contraválidas ou proposições logicamente falsas. As contingências são denominadas proposições contingentes ou proposições indeterminadas. Considere as seguintes fórmulas, numeradas de I a III:
+
+I) ~P -> ~(~P -> ~Q)
+
+II) ~( (~P v Q) -> ~(P ^ ~Q) )
+
+III) ~(~P ^ ~(P -> ~Q) ^ ~(~P v ~Q) )
+
+As fórmulas I, II e III, são respectivamente:
+
+
+Indeterminada, contraditória, tautológica
+
+
+Indeterminada, tautológica, contraditória
+
+
+Tautológica, contraditória, indeterminada
+
+
+Contraditória, indeterminada, tautológica
+
+
+Tautológica, indeterminada, contraditória
