@@ -1,0 +1,69 @@
+#PROGRAMAS CONDIÇÕES# 
+
+
+#SALÁRIO DE UM FUNCIONÁRIO E AUMENTO DO MESMO#
+salario = float(input('Qual o seu salário :'))
+salsup = salario*(10/100)
+salinf = salario*(15/100)
+if salario > 1250 :
+    print('Houve um aumento de R${} em seu salário , portanto seu novo salário é de R${}' .format(salsup,salario+salsup))
+else :
+    print('Houve um aumento de R${} em seu salário , portanto seu novo salário é de R${}' .format(salinf,salario+salinf))
+
+#LÊ QUAL O MAIOR E MENOR DOS NÚMEROS#
+n1 = float(input('Digite um número :'))
+n2 = float(input('Digite outro número :'))
+n3 = float(input('Digite mais um número :'))
+maior = max(n1 , n2 , n3)
+menor = min(n1 , n2 , n3)
+print('O maior número é {:.0f} e o menor número ée {:.0f}' .format(maior,menor))
+
+#PREÇO POR KM DE VIAGENS LONGAS E CURTAS#
+km = int(input('Qual a distância da viagem :'))
+vc = 0.50*km  #viagem curta#
+vl = 0.45*km  #vigem longa#
+if km <=200 :
+    print('O preço da viagem é de R${}' .format(vc))
+else :
+    print('O preço da viagem é de R${}' .format(vl))
+
+
+#VENDO SE O NÚMERO ESCOLHIDO PELO USUÁRIO É PAR OU ÍMPAR#
+n = int(input('Digite um número inteiro :'))
+if n % 2 == 0 :
+    print('O número {} é par' .format(n))
+else :
+    print('O número {} é ímpar' .format(n))
+
+
+#ADIVINHA NÚMERO#
+import random
+num = random.randint(0,5)
+tentativa = int(input('Digite um número entre de 0 à 5 :'))
+if num == tentativa:
+    print('Parabéns , você acertou o número !')
+else :
+    print('Você errou o número !')
+
+
+#CONDIÇÃO IDADE#
+idade = int(input('Qual sua idade ?'))
+if idade<18:
+    print('Você é menor de idade ! ')
+    print('FIM')
+else:
+    print('Você é maior de idade ! ')
+    print('FIM')
+
+
+#CONDIÇÃO MULTA
+v = int(input('Qual a velocidade do carro : '))
+lv = 80
+m = 7*(v-lv)
+if v>80:
+    print('Você foi multado por excesso de velocidade , e a multa é de R${}' .format(m))
+else:
+    print('Você está dentro do limite de velocidade , não haverá multas')
+
+
+
