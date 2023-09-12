@@ -1,0 +1,30 @@
+#DECLARANDO VARIÁVEL COR#
+nome = 'João'
+cores = {'limpa' : '\033[m',
+        'azul' : '\033[34m' ,
+        'amarelo' : '\033[33m' ,
+        'pretoebranco' : '\033[m'}                                                 
+print('Muito prazer em te conhecer {}{}{}!' .format(cores['azul'], nome , cores['limpa'])) #LIMPA PÓS A PALAVRA SERVE PRA DEIXAR SOMENTE A PALAVRA SOB COMANDO DE COR#
+
+# \033[0;33;44m] -> representar uma cor em python
+# 0 = syle ; 33 = text ; 44 = back
+
+
+#STYLE                                                            #BACK(FUNDO)
+# 0 = FAZ NADA                                                    # 40 = BRANCO
+# 1 = DEIXA EM NEGRITO                                            # 41 = VERMELHO
+# 4 = SUBLNHA                                                     # 42 = VERDE
+# 7 =INVERTE COR FUNDO COM COR DA LETRA                           # 43 = AMARELO
+                                                                  # 44 = AZUL
+#TESTE                                                            # 45 = ROXO
+# 30 = BRANCO                                                     # 46 = CIANO
+# 31 = VERMELHO                                                   # 47 = CINZA
+# 32 = VERDE
+# 33 = AMARELO
+# 34 = AZUL
+# 35 = ROXO                                                       # \033[m -> usado no final , para validar somente tal número ou palavra , e não a frase toda
+# 36 = CIANO
+# 37 = CINZA
+
+
+
