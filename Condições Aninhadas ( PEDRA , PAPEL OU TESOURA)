@@ -1,0 +1,117 @@
+#PEDRA PAPEL OU TESOURA COM O USUÁRIO#
+import random
+escolha = str(input('Escolha Pedra , Papel ou Tesoura :'))
+opçoes = 'pedra' , 'papel' , 'tesoura' 
+escolha_comp =random.choice(opçoes)
+print('Você escolheu {}' .format(escolha))
+print('O computador escolheu {}' .format(escolha_comp))
+
+if escolha == escolha_comp :
+    print('----------------------EMPATE------------------------')
+elif (
+    (escolha == 'pedra' and escolha_comp == 'tesoura')or
+    (escolha == 'tesoura' and escolha_comp == 'papel')or
+    (escolha == 'papel' and escolha_comp == 'pedra')
+):
+    print('---------------------Você venceu---------------------')
+else :
+    print('---------------------Você perdeu---------------------')
+
+
+#CALCULA O IMC E MOSTRA O STATUS DE ACORDO#
+peso = float(input('Peso do usuário :'))
+altura = float(input('Altura do usuário :'))
+imc = peso/(altura*altura)
+
+if imc < 18.5 :
+    print('Abaixo do peso !')
+elif 18.5<=imc<25 :
+    print('Peso ideal !')
+elif 25<=imc<30 :
+    print('Sobrepeso !')
+elif 30<=imc<40 :
+    print('Obesidade !')
+else :
+    print('Obesidade Mórbida !')
+
+
+#PROGRAMA DE CATEGORIA DE ACORDO  COM IDADE#
+nome = str(input('Qual seu nome :'))
+ano = int(input('Qual ano você nasceu :'))
+
+if ano >=2014 :
+    print('MIRIM')
+elif 2009<=ano<2014 :
+    print('INFANTIL')
+elif 2004<=ano<2009 :
+    print('JUNIOR')
+elif ano == 20 :
+    print('SENIOR')
+else :
+    print('MASTER')
+    
+
+#PROGRMA QUE LÊ DUAS NOTAS E CALCULA A MÉDIA MOSTRANDO MENSAGEM DE APROVADO#
+nota1 = float(input('Qual a 1° nota ?'))
+nota2 = float(input('Qual a 2° nota ?'))
+media = (nota1+nota2)/2
+print(media)
+
+if media<5 :
+    print('REPROVADO')
+elif 5.5 <= media <= 6.9 :
+    print('RECUPERAÇÃO')
+else :
+    print('APROVADO')
+   
+
+#LÊ O ANO DE NASCIMENTO E DA INFORMAÇÕES DE ACORDO COM SUA IDADE#
+ano = int(input('Qual o ano de seu nascimento :'))
+idade = 18
+
+if ano +idade > 2023 :
+    print('Ainda não é hora de se alistar ao serviço militar !')
+elif ano +idade == 2023 :
+    print('É hora de se alistar ao serviço militar !')
+else :
+    print('Já passou do tempo de se alistar ai serviço militar !')
+
+
+#QUAL VALOR É MAIOR OU MENOS OU SÃO IGUAIS#
+num1 = int(input('Digite um número inteiro :'))
+num2 =int(input('Digite outro número inteiro :'))
+
+if num1 > num2 :
+    print('O primeiro valor é maior !')
+elif num2 > num1 :
+    print('O segundo número é maior que o primeiro')
+else :
+    print('Não existe valor maior , os dois são iguais')
+
+
+#PROGRAMA DE CÁLCUO DE EMPRÉSTIMO#
+nome = str(input('Olá , qual o seu nome ? '))
+vcasa = float(input(str('Qual o valor da casa que quer comprar ? R$')))
+salario = float(str(input('Qual seu salário ? R$')))
+anos = int(input('Em quantos anos irá pagar a casa ?'))
+meses = anos*12
+prestação = vcasa/meses
+
+if prestação > (30/100)*salario :
+    print('{} , infelizmente não terá como fazer o empréstimo , seu salário é muito baixo para financiar a casa' .format(nome))
+elif prestação == (30/100)*salario :
+    print('O valor da prestação é o exato quenós aceitamos para o empéstimo')
+else :
+    print('Parabéns {} , vamos dar andamento ao empréstimo' .format(nome))
+
+
+#PROGRAMA CONDICIONAL ANINHADA COM NOMES#
+nome = str(input('Qual seu nome ?'))
+if nome == 'Gustavo' :
+    print('Que nome bonito')
+elif nome == 'Pedro' or nome == 'João' or nome =='Maria' :
+    print('Seu nome é bem popular no Brasil.')
+else :
+    print('Seu nome é bem normal')
+    print('Tenha um ótimo dia , {}' .format(nome))
+    
