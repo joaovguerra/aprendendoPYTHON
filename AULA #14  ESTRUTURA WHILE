@@ -1,0 +1,32 @@
+num1 = float(input('Digite um número :'))
+num2  = float(input('Digite outro número :'))
+usuario = 0
+while usuario != 5 :
+        print('---------MENU----------')
+        print('-  [1] SOMAR          ')               
+        print('-  [2] MULTPLICAR     ')               
+        print('-  [3] MAIOR          ')
+        print('-  [4] NOVOS NÚMEROS  ')
+        print('-  [5] SAIR DO PROGRAMA')
+        print('-' * 25)
+        usuario = int(input('**************ESCOLHA UM NÚMERO DO MENU**************   :'))
+        if usuario == 1 :
+                soma = num1+num2
+                print('A soma é {}' .format(soma)) 
+        elif usuario == 2 :
+                mult = num1*num2 
+                print('A multiplicação é {}' .format(mult))
+        elif usuario == 3 :
+                if num1>num2 :
+                        print('O maior número é {}' .format(num1))
+                if num2>num1:
+                        print('O maior número é {}' .format(num2))
+        elif usuario == 4 :
+                num1 = float(input('Digite um número :'))
+                num2  = float(input('Digite outro número :'))
+        elif usuario>5:
+                print('O número digitado não está no MENU ! DIGITE NÚMEROS DE 1 À 4 !')
+print('Fim do Programa ! Volte Sempre ! ')
+
+
+    
